@@ -1,0 +1,110 @@
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+body{
+    background-color: aliceblue;
+}
+#center{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.header{
+    padding-top: 5px;
+    margin-top: 10px;
+    background-color: #198754;
+}
+.logo-main{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90px;
+    height: 110px;
+}
+.navbar{
+    justify-content: center;
+
+}
+.buscador{
+    padding: 50px;
+    display: flex;
+}
+.carrito{
+    padding: 50px;
+    display: flex;
+}
+#logo_carrito{
+    width: 35px;
+    height: 35px;
+}
+.carousel-inner{
+    height: 400px;
+}
+#nombre_empresa{
+    color : slateblue;
+    font-size: 25px;
+    font-family: Ubuntu;
+    font-variant: small-caps;
+    ;
+
+}
+.info{
+    color:aliceblue;
+    font-size: 15px;
+}
+.footer{
+    background-color: #198754;
+    text-align: center;
+    padding-top: 70px;
+}
+#logo_footer{
+    height: 100px;
+    width: 100px;
+}
+
+#texto_info{
+    font-size: 13px;
+    font-family: sans-serif;
+    color:aliceblue;
+    text-align: center;
+}
+#li{
+    padding: 3px;
+    font-size: 14px;
+    color: blueviolet;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.caja{
+    position: relative;
+    display: inline-block;
+
+}
+.texto1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-style: oblique;
+    color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#texto_info_1{
+    font-size: 13px;
+    font-family: sans-serif;
+    color:rgb(226, 0, 0);
+    text-align: center;
+}
+#quienes{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    column-count: 2;
+}

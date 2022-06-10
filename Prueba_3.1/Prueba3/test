@@ -1,0 +1,7 @@
+
+
+
+
+
+
+DBMS_OUTPUT.PUT_LINE(   RPAD('RUN',15) ||' ---- '|| RPAD('NOMBRE',15) ||' ---- '|| RPAD('EDAD',15) ||' ---- '|| RPAD('PTJE_EDAD',15) ||' ---- '|| RPAD('EST_CIVIL',15)  ||' ---- '||RPAD('PTJE_EST_CIVIL',15) ||' ---- '||RPAD('PUEBLO_IND_ORIG',15) ||' ---- '|| RPAD(PTJE_PUEBLO_IND_ORIG,15) ||' ---- '|| RPAD('ZONA_EXTREMA',15) ||' ---- '||RPAD('PTJE_ZONA_EXTREMA',15) ||' ---- '||RPAD('ANTEC_ACAD',15) ||' ---- '||RPAD('PJE_ANTEC_ACAD',15) ||' ---- '||RPAD('TRAYECT_EXP_LABORAL',15) ||' ---- '||RPAD('DOCENCIA_INVEST',15) ||' ---- '||RPAD('PTJE_DOCENCIA_INVEST',15) ||' ---- '||RPAD('OBJ_ESTUDIO',15)  ||' ---- '||RPAD('PTJE_OBJ_ESTUDIO',15) ||' ---- '||RPAD('INTERES',15) ||' ---- '||RPAD('PTJE_INTERES',15) ||' ---- '||RPAD('REDISTRIBUCION',15) ||' ---- '||RPAD('PJE_REDISTRIB',15) ||' ---- '||RPAD('INST_EDUC_EXTRANJERA',15) ||' ---- '||RPAD('PTJE_RANK_INST_EDUC_EXTRANJERA',15) ||' ---- '||'PTJE_TOTAL');

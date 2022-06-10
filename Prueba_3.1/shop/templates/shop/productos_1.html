@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
+
+  <title>Hardware</title>
+</head>
+
+<body id="color-fondo">
+  <header class="container-flex bg-dark">
+    <div class="text-white p-5">
+      <img src="img/cpu.png" class="logo" alt="">
+      <h1>Hardware Shop</h1>
+    </div>
+    <div class="container-fluid">
+      <form class="d-flex p-5">
+        <input class="form-control me-5" type="search" placeholder="Buscar..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container-fluid">
+        <img src="img/cpu.png" alt="" class="logonavbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link text-white" href="#SobreNosotros">Quiénes Somos</a>
+            <a class="nav-link text-white" href="#">Productos</a>
+            <a class="nav-link text-white" href="contacto.html">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="container-flex">
+      <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 list-group p-5 ">
+        <h5>Productos</h5>
+        <hr>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Pc's Completos</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Disco Duro</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Redes y Conectividad</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Partes y Piezas PC</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Licencias</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Monitores</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Servidores</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Escritorios</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Notebooks</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Camaras</a>
+        <a href="#" class="mb-2 list-group-item list-group-item-action"> &#8226; Proyectores</a>
+
+        <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> <img id="carrito"
+            src="img/carrito-de-compras.png"> Visualiza tu Carro de Compras</button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Visualización de tu Carro de Compras</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Carrito de Hardware Shop </p>
+            <h1>Compras</h1>
+            <hr>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+        <div class="row" id="cards"></div>
+    </div>
+
+
+      <template id="template-card">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 p-5">
+          <div class="card">
+            <img src="" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Titulo</h5>
+              <p class="card-text">Precio</p>
+              <button type="button" class="btn btn-success">Agregar al Carrito</button>
+            </div>
+          </div>
+        </div>
+      </template>
+
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+          <button class="btn btn-info btn-sm">
+            +
+          </button>
+          <button class="btn btn-danger btn-sm">
+            -
+          </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td>10</td>
+      <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+          Limpiar Carro
+        </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+  </main>
+
+  <footer>
+    <div class="container-fluid d-flex bg-dark text-white pt-5 pb-4 p-5">
+      <div id="estilo_quienes" class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-6 col-lg-3 col xl-6 mx-auto mt-3">
+            <h4 id="SobreNosotros">¿Quienes somos?</h4>
+            <img class="logo" src="img/cpu.png" alt="">
+            <p>Somos una empresa de venta de software,
+              alta disponibilidad de productos,
+              precios justos y con modalidad
+              TOTALMENTE On-line</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h4>Categorias</h4>
+            <nav>
+              <ul class="list-unstyled list-inline">
+                <li><a class="m-2 text-white mx-auto" href="#">Pc's Completos</a></li>
+                <li><a class="m-2 text-white mx-auto" href="#">Disco Duro</a></li>
+                <li><a class="m-2 text-white mx-auto" href="#">Redes y Conectividad</a></li>
+                <li><a class="m-2 text-white mx-auto" href="#">Partes y Piezas PC</a></li>
+                <li><a class="m-2 text-white mx-auto" href="#">Licencias</a></li>
+                <li><a class="m-2 text-white mx-auto" href="#">Monitores</a></li>
+                <li><a class="m-2 text-white mx-auto" href="#">Servidores</a></li>
+                <li><a class="m-2 text-white mx-auto" href="#">All in one</a></li>
+                <li><a class="m-2 text-white mx-auto" href="productos.html"> Ver más productos </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h4>Informacion de Contacto</h4>
+            <div class="row">
+              <img src="" alt="">
+              <h6>Av. SiempreViva 123, Santiago, Chile</h6>
+
+            </div>
+            <div class="row">
+              <img src="" alt="">
+              <h6>+56 9 9999 9999</h6>
+            </div>
+            <div class="row">
+              <img src="" alt="">
+              <h6>hardware@gmail.com</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <h6 id="footer_str">Hardware Shop 2021</h6>
+    </div>
+  </footer>
+  <!--Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+  <!-- Jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+  </script>
+  <script src="{% static 'shop/js/app.js' %}"></script>
+</body>
+
+</html>

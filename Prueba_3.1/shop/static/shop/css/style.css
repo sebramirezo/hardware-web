@@ -1,0 +1,114 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.logo{
+
+    width: 100px;
+    height: auto;
+}
+
+.carrusel{
+
+    width: max-content;
+}
+
+.logonavbar{
+    width: 30px;
+    height: auto;
+}
+
+p{
+    font-size: 15px;
+}
+
+#estilo_footer{
+
+    background-color: rgb(223, 223, 223);
+    max-width: 100%;
+}
+#footer_str{
+    text-align: center;
+}
+
+#color-fondo{
+    background-color: rgb(223, 223, 223);
+}
+
+#estilo_quienes{
+    width: 600px;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+}
+
+.block {
+    margin-bottom: 50px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.card-img-top{
+    padding: auto;
+    box-sizing: content-box;
+}
+
+.card-body{
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.card-title{
+    color:white;
+}
+.card-text{
+    color: white;
+    font-size: 25px;
+}
+
+.card{
+    width: 260px;
+    height: auto;
+    background-color:currentColor;
+    border: 10px;
+}
+
+.form-label{
+    font-size: 15px;
+    font-style: italic;
+}
+.form-control{
+    border-radius: 10px;
+}
+
+#form-label {
+
+    text-decoration-color: black ;
+    background: rgb(255, 255, 255)
+}
+
+#color-form-label{
+    color: rgb(0, 0, 0);
+}
+
+#carrito{
+    width: 35px;
+    height: 35px;
+    text-align: left;
+}
+
+.carritoleft{
+    text-align: left;
+}
+h6{
+    text-align: center;
+}
+
+.list-group-item {
+    border-radius: 10px;
+    background-color: rgb(223, 223, 223);
+    font-size: 14px;
+}

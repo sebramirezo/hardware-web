@@ -1,0 +1,38 @@
+[
+  {
+    "precio": 15550,
+    "id": 1,
+    "title": "LOGITECH COMBO INALAMBRICO",
+    "thumbnailUrl": "https://pcpartes.cl/1726-home_default/logitech-combo-inalambrico-mk220-compactosilencioso24ghz.jpg"
+  },
+  {
+    "precio": 29990,
+    "id": 2,
+    "title": "HPX 8GB 2666MHZ DDR4 DIMM FURY",
+    "thumbnailUrl": "https://pcpartes.cl/1658-home_default/hpx-8gb-2666mhz-ddr4-dimm-fury-black.jpg"
+  },
+  {
+    "precio": 42900,
+    "id": 3,
+    "title": "DISCO DURO 1TB PARA PC TOSHIBA 3.5",
+    "thumbnailUrl": "https://pcpartes.cl/436-home_default/disco-duro-western-digital-blue-1000gb-sata3.jpg"
+  },
+  {
+    "precio": 5690990,
+    "id": 4,
+    "title": "LENOVO THINKSYSTEM DE2000H 2U24",
+    "thumbnailUrl": "https://pcpartes.cl/1844-home_default/lenovo-thinksystem-de2000h-2u24-iscsifc-hybrid.jpg"
+  },
+  {
+    "precio": 2298990,
+    "id": 5,
+    "title": "LENOVO NTBK X1 CARBON I7-8565U 1TB",
+    "thumbnailUrl": "https://pcpartes.cl/2160-home_default/lenovo-ntbk-x1-carbon-i7-8565u-1tb-16gb-w10-pro.jpg"
+  },
+  {
+    "precio": 18900,
+    "id": 6,
+    "title": "MOUSE GAMER GENIUS GAMING",
+    "thumbnailUrl": "https://pcpartes.cl/2573-home_default/mouse-gamer-genius-gaming-ammox-x1-400-negro-usb-400-3200-dpi.jpg"
+  }
+]
